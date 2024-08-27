@@ -69,7 +69,7 @@ export default function Home() {
             </fieldset>
             <InputControl label="Active" id="active" type="checkbox" checked={input.active} onChange={handleChange} />
           </div>
-          <button type="submit" className="bg-blue-500 text-white w-full h-12 rounded text-base">
+          <button type="submit" className="bg-blue-400 text-white w-full h-12 rounded text-base hover:bg-blue-500">
             Submit
           </button>
         </form>
