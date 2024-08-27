@@ -30,48 +30,50 @@ export default function Home() {
       <p>Website Dev mode is working.</p>
       <Sprite name="plus" style={{ stroke: 'var(--primary)', color: 'var(--background)' }} />
       <Sprite name="trash" style={{ stroke: 'var(--primary)', color: 'var(--background)' }} />
-	<p>Entry Form</p>	
-      <form className="max-w-sm w-full mx-auto border border-black rounded-md p-2">
-        <div>
-          <InputControl
-            label="First name"
-            id="first-name"
-            type="text"
-            value={input['first-name']}
-            onChange={handleChange}
-          />
-          <InputControl
-            label="Last name"
-            id="last-name"
-            type="text"
-            value={input['last-name']}
-            onChange={handleChange}
-          />
-          <fieldset className="border border-black rounded my-2 flex justify-center justify-items-center">
-            <legend className="mx-auto bg-black text-white px-8 rounded">Gender</legend>
+      <section className='max-w-sm w-full mx-auto border border-black rounded-md p-2'>
+	      <p className='text-center font-bold text-lg'>Entry Form</p>	
+        <form className="">
+          <div>
             <InputControl
-              label="Male"
-              id="gender"
-              type="radio"
-              checked={input.gender === 'male'}
-              value="male"
+              label="First name"
+              id="first-name"
+              type="text"
+              value={input['first-name']}
               onChange={handleChange}
             />
             <InputControl
-              label="Female"
-              id="gender"
-              type="radio"
-              checked={input.gender === 'female'}
-              value="female"
+              label="Last name"
+              id="last-name"
+              type="text"
+              value={input['last-name']}
               onChange={handleChange}
             />
-          </fieldset>
-          <InputControl label="Active" id="active" type="checkbox" checked={input.active} onChange={handleChange} />
-        </div>
-        <button type="submit" className="bg-blue-500 text-white w-full h-12 rounded text-base">
-          Submit
-        </button>
-      </form>
+            <fieldset className="border border-black rounded my-2 flex justify-center justify-items-center">
+              <legend className="mx-auto bg-black text-white px-8 rounded">Gender</legend>
+              <InputControl
+                label="Male"
+                id="gender"
+                type="radio"
+                checked={input.gender === 'male'}
+                value="male"
+                onChange={handleChange}
+              />
+              <InputControl
+                label="Female"
+                id="gender"
+                type="radio"
+                checked={input.gender === 'female'}
+                value="female"
+                onChange={handleChange}
+              />
+            </fieldset>
+            <InputControl label="Active" id="active" type="checkbox" checked={input.active} onChange={handleChange} />
+          </div>
+          <button type="submit" className="bg-blue-500 text-white w-full h-12 rounded text-base">
+            Submit
+          </button>
+        </form>
+      </section>
     </main>
   );
 }
