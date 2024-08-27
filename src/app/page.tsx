@@ -30,6 +30,7 @@ export default function Home() {
       <p>Website Dev mode is working.</p>
       <Sprite name="plus" style={{ stroke: 'var(--primary)', color: 'var(--background)' }} />
       <Sprite name="trash" style={{ stroke: 'var(--primary)', color: 'var(--background)' }} />
+	<p>Entry Form</p>	
       <form className="max-w-sm w-full mx-auto border border-black rounded-md p-2">
         <div>
           <InputControl
