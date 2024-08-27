@@ -40,7 +40,7 @@ export default function InputControl({ label, id, type, value, checked, onChange
             type="text"
             id={id}
             name={id}
-            className="block h-12 w-full border border-neutral-200 rounded"
+            className="block h-12 w-full border border-neutral-400 rounded"
             onChange={onChange}
             value={value}
           />
